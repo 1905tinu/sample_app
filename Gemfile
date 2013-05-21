@@ -6,15 +6,16 @@ gem 'rails', '4.0.0.rc1'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '2.13.1'
+  #gem 'rspec-rails', '2.13.1'
 end
 
 group :production do
+  gem 'thin'
   gem 'pg'
 end
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -38,7 +39,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
+# bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
