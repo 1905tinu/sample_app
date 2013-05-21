@@ -14,6 +14,10 @@ group :production do
   gem 'pg'
 end
 
+group :test do
+  gem 'selenium-webdriver', '2.0'
+  gem 'capybara', '2.1.0.rc1'
+end
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
